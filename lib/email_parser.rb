@@ -8,7 +8,7 @@ class EmailParser
     @mails = stng
   end
   def parse
-    @mails.split(/[, ]+/).uniq
+    @mails.split(/[\s,]+/).uniq
   end
 
 end
